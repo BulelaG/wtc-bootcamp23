@@ -70,10 +70,15 @@
 # b = 2007
 # if a > b: print("a is greater than b") 
 
-a = 33
-b = 200
+# a = 33
+# b = 200
 
-if b > a:
-    print("Sho")
+# if b > a:
+#     print("Sho")
 
 # having an empty if statement like this, would raise an error without the pass statement
+
+
+x = range(0,101,10)
+for n in x :
+    print(n)
