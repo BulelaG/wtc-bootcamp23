@@ -17,7 +17,7 @@
 # print("You got it!")
 
 
-
+# ----------------------------------------------------------
 # print("Starting...")
 # count = 0
 # while count < 17: # repeat 10 times
@@ -27,7 +27,7 @@
 
 
 
-
+# --------------------------------------------------------------------
 
 
 # def example_3():
@@ -36,6 +36,8 @@
 
 # example_3()
 
+
+# ----------------------------------------------------------------------------
 # my_number = 42
 # while True: # The loop condition is always true
 #     your_input = input("Guess my number: ")
@@ -48,10 +50,30 @@
 #         print("guess lower!")
 # print("You got it!")
 
+# --------------------------------------------------------
+
+# a = 20054
+# b = 2007
+# if b > a:
+#   print("b is greater than a")
+# elif a == b:
+#   print("a and b are equal")
+# else:
+#   print("a is greater than b")
+
+# -------------------------------------------------------
+
+# SHORT HAND FOR IF STATEMENTS
 
 
-range(5,15)
+# a = 20054
+# b = 2007
+# if a > b: print("a is greater than b") 
 
-# range(20)
+a = 33
+b = 200
 
-# range(0,101,10)? What happened?
+if b > a:
+    print("Sho")
+
+# having an empty if statement like this, would raise an error without the pass statement
