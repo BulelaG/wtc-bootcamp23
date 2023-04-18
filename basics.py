@@ -106,7 +106,78 @@
 
 # hello("B-man")
 
-def my_function(**kid):
-  print("His last name is " + kid["lname"] + " He is "+ kid["age"] +" years young")
+# ----------------------------------------
+# Arbitrary Keyword Arguments, **kwargs
 
-my_function(fname = "Tobias", age = "12", lname = "Refsnes")
+# If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.
+
+# This way the function will receive a dictionary of arguments, and can access the items accordingly:
+
+# def my_function(**kid):
+#   print("His last name is " + kid["lname"] + " He is "+ kid["age"] +" years young")
+
+# my_function(fname = "Tobias", age = "12", lname = "Refsnes")
+# ---------------------------------
+
+# Default Parameter Value
+
+# def my_function(country = "Norway"):
+#   print("I am from " + country)
+
+# my_function("Sweden")
+# my_function("India")
+# my_function()
+# my_function("Brazil")
+# my_function("South Ahh")
+# ---------------------------------------------
+
+# Passing a List as an Argument
+# def my_function(food):
+#   for x in food:
+#     print(x)
+
+# fruits = ["apple", "banana", "cherry"]
+# snacks = ["biscuits", "sweets", "biltong"]
+# my_function(snacks)
+# my_function(fruits)
+# ---------------------------------------------
+# The return value
+# def my_function(x):
+#   return 5 * x * 5
+
+# print(my_function(3))
+# print(my_function(5))
+# print(my_function(9))
+# ---------------------------------------
+
+# Pass statement
+# def myfunction():
+#   pass
+
+
+
+
+
+    # i = int(input())
+# edit the code from the lines below
+# i =0
+# while i <=9 :
+#     i = i+1
+#     print(i)
+
+
+# ---------------------------------------------
+# Either type of loop will work. Example using a for loop:
+
+
+# Example using a while loop:
+
+# num = 0
+# while num <= 1000:
+#     print(num)
+#     num += 1
+
+# ---------------------------
+
+for num in range(-10, 0):
+    print(num)
