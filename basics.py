@@ -74,11 +74,39 @@
 # b = 200
 
 # if b > a:
-#     print("Sho")
-
 # having an empty if statement like this, would raise an error without the pass statement
+# ------------------------------------------------------------
+#  counting in tens till hundred
+# x = range(0,101,10)
+# for n in x :
+#     print(n)
+
+# ----------------------------------------------------------------
+# wordlist = ['box','fox','socks',"lox"] # this is an array. It is a simple list of 3 letters.
+# for word in wordlist: # item takes on the value of each element in the list, one at a time.
+#     print(word)
 
 
-x = range(0,101,10)
-for n in x :
-    print(n)
+# my_number = 42
+# while True: # The loop condition is always true
+#     your_input = input("Guess my number: ")
+#     your_guess = int(your_input)
+#     if your_guess == my_number:
+#         print("You got it!")
+#         break # and we break out of the loop here
+#     if your_guess < my_number:
+#         print("guess higher!")
+#     else:
+#         print("guess lower!")
+
+# function defining
+
+# def hello(name):
+#     print("Hello "+ name)
+
+# hello("B-man")
+
+def my_function(**kid):
+  print("His last name is " + kid["lname"] + " He is "+ kid["age"] +" years young")
+
+my_function(fname = "Tobias", age = "12", lname = "Refsnes")
