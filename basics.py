@@ -229,13 +229,18 @@
 
 # ----------------------------------------------------------------
 
+
+# adding numbers in a range 
+
 # s: store sum of all numbers
-s = 0
-n = 10
+# s = 0
+# n = 10
 # run loop n times
 # stop: n+1 (because range never include stop number in result)
-for i in range(1,n+1,1):
+# for i in range(1,n+1,1):
     # add current number to sum variable
     
-    s += i
-print("Sum is: ", s)
+#     s += i
+# print("Sum is: ", s)
+student_record = (1, "Charles", 23)
+print(student_record)
