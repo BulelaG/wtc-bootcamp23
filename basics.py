@@ -177,7 +177,65 @@
 #     print(num)
 #     num += 1
 
-# ---------------------------
+# ----------counting from -10 to -1-----------------
 
-for num in range(-10, 0):
-    print(num)
+
+
+# for num in range(-10, 0):
+#     print(num)
+
+
+# The len() function can be used for this purpose.
+
+# Example:
+
+# a_lst = ["a", "b", "c", "d"]
+# print(len(a_lst)) # Prints 4
+
+# ------------------task attempt-------------------------------
+
+# # Hint: pattern contains 5 rows
+# row = int(input())
+# # start: 1
+# # stop: row+1 (range never include stop number in result)
+# # step: 1
+# # run loop 5 times
+# for i in range(row):
+#     # Run inner loop i+1 times
+#     for j in range(i+1):
+#         print(j+1, end=' ')
+#     # empty line after each row
+#     print("")
+# --------------REversing a number in python-----------------------------
+# num =123
+# reverse_number = 0
+
+# while num > 10 :#Type in your code here 
+#    #And here
+#    digit = num % 10
+#    reverse_number = reverse_number * 10 + digit
+#    num = num
+#    --------------------------------------------------------------------------
+# print("Reverse Number ", reverse_number)
+# s: store sum of all numbers
+# s = 0
+# n = int(input())
+# # run loop n times
+# # stop: n+1 (because range never include stop number in result)
+# for i in range(1,n+1,n):
+#     # add current number to sum variable
+#     s =+ n +i
+# print("Sum is: ", s)
+
+# ----------------------------------------------------------------
+
+# s: store sum of all numbers
+s = 0
+n = 10
+# run loop n times
+# stop: n+1 (because range never include stop number in result)
+for i in range(1,n+1,1):
+    # add current number to sum variable
+    
+    s += i
+print("Sum is: ", s)
