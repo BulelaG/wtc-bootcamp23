@@ -242,5 +242,41 @@
     
 #     s += i
 # print("Sum is: ", s)
-student_record = (1, "Charles", 23)
-print(student_record)
+# ------------------------------------------
+
+
+# student_record = (1, "Charles", 23)
+# print(student_record[1])
+# --------------------------------------
+
+# tuples
+
+# veggies = ("mielie", "carrot")
+# veggies = veggies + ("potato",)
+
+# print(veggies)
+
+
+
+# print("tomato" in veggies)
+
+
+# print("mielie" in veggies)
+
+
+# # -------------------------
+# age = "ten"
+
+# # tuple(age) 
+# print(age)
+# --------
+
+
+
+# a shopping list
+
+groceries = ["bread", "eggs", "milk"]
+
+
+print(groceries[2])
+
