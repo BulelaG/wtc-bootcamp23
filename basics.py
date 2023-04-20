@@ -550,6 +550,181 @@
 
 # append() adds an object to the end of a list:
 
-a = ['a','b']
-a.append(123)
-print(a)
+# a = ['a','b']
+# a.append(123)
+# print(a)
+
+# a = ['a','b']
+# x = a.append(123)
+# print(x)
+
+# a = ['a','b']
+# # a + [1, 2, 3]
+# b=a+["h"]
+
+# print(b)
+
+# a = ['a','b']
+# a.append([1, 2, 3]) 
+# print(a)
+
+# concatenation
+# a = ['a','b']
+# a.append('foo')
+# print(a)
+
+
+# extend()
+
+# extend() also adds to the end of a list, but the argument is expected to be an iterable. 
+
+# a = ['a','b']
+# a.extend([1, 2, 3])
+# print(a)
+
+# insert()
+
+# insert() inserts an object into a list at the specified index and the remaining list elements are pushed to the right.
+
+# a= ['foo','bar','baz','qux','quux','corge']
+# a.insert(3, 3.14159)
+# print(a)
+
+# remove()
+
+# remove() removes an object from a list. If the object isn’t in the list, an exception is raised.
+
+# a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+# a.remove('baz')
+# print(a)
+
+
+
+# error bc no item like that 
+# a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+# a.remove('Bark!')
+# print(a)
+
+# pop()
+
+# pop() removes an element from a list. This method differs from .remove() in two ways:
+
+#     You specify the index of the item to remove, rather than the object itself.
+
+#     The method returns a value: the item that was removed.
+
+# pop() simply removes the last item in a list. 
+
+# a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+# a.pop()
+# print(a)
+
+# a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+# a.pop(1)
+# print(a)
+
+
+# a = ['foo', 'bar', 'baz', 'qux', 'quux', 'corge']
+# a.pop(-3)
+# print(a)
+
+
+# LENTH OF A LIST
+# thislist = ["apple", "banana", "cherry"]
+# print(len(thislist))
+
+# List constructor
+# thislist = list(("apple", "banana", "cherry"))
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# print(thislist[-4:-1])
+
+#Negative indexing means starting from the end of the list.
+
+#This example returns the items from index -4 (included) to index -1 (excluded)
+
+#Remember that the last item has the index -1,
+
+# CHANGING ITEM ON A LIST
+# thislist = ["apple", "banana", "cherry"]
+# thislist[1] = "blackcurrant"
+
+# print(thislist)
+
+# REPLACING 2 ITEMS WITH 2 ITEMS ON A LIST
+
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+
+# thislist[1:3] = ["blackcurrant", "watermelon"]
+
+# print(thislist)
+
+
+# REPLACING 1 ITEM WITH 2 ITEMS ON A LIST
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist[1:2] = ["blackcurrant", "watermelon"]
+# print(thislist) 
+
+
+# ADDING ON POSITION 2
+# thislist = ["apple", "banana", "cherry"]
+# thislist.insert(2, "watermelon")
+# print(thislist)
+
+
+
+# 1 . using nested loops
+
+# words = ['a','abcd','abcde','ab','abc']
+# lengths = []
+# for word in words:
+#     if len(word) > 1:
+#         lengths.append(len(word))
+
+# print(lengths) #4,5,2,3
+
+# 2 . using map() and lambda function
+
+# words = ['a','abcd','abcde','ab','abc']
+# lengths = list(map(lambda word: len(word), filter(lambda word: len(word)>1,words)))
+
+# print(lengths) #[4, 5, 2, 3]
+
+# 3 . using list comprehension
+
+# words = ['a','abcd','abcde','ab','abc']
+# lengths = [len(word) for word in words if len(word)>1]
+
+# print(lengths) #[4, 5, 2, 3]
+
+# --------lambda attemt
+# lambda x: x*x
+
+# print(lambda x: x*x)(9)
+
+# s an example, we can use map() to get a list of the lengths of words from a list of words:
+
+# words = ['a','abcd','abcde','ab','abc']
+# lengths = list(map(lambda word: len(word), words))
+
+# print(lengths) #[1,4,5,2,3]
+
+
+# # We can use filter() to get a list of words ending in d:
+
+# words = ['a','abcd','abcde','ab','abc']
+# d_words = list(filter(lambda word: word.endswith('d'), words))
+# print(d_words) #['abcd']
+
+
+
+# And we can use reduce() to get a total character count for all the words in a list:
+
+# from functools import reduce
+# words = ['a','abcd','abcde','ab','abc']
+# lengths = list(map(lambda word: len(word), words))
+# char_count = reduce(lambda len1, len2: len1 + len2, lengths)
+
+# print(char_count) #15
