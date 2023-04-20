@@ -1,6 +1,6 @@
 def user_name():
 
-    username = input("Enter username:")
+    username = input("Enter username: ")
     
     '''
     Use this function to get the user input (username)
