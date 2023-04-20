@@ -14,7 +14,7 @@ def read_file(username):
     Use this function to open and read the contents of the file student_results.txt 
     in order that you may extract the users results
     '''
-    file = "/home/bootcamp/Documents/WTC-Bootcamp2023/bootcamp_final_selector"
+    file = "/home/bootcamp/Documents/WTC-Bootcamp2023/bootcamp_final_selector/student_results.txt"
     with open(file, "r") as f:
         f1=f.read()
         results = f1.split()
