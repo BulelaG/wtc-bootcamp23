@@ -728,3 +728,144 @@
 # char_count = reduce(lambda len1, len2: len1 + len2, lengths)
 
 # print(char_count) #15
+
+# feel free to use these dictionaries in your solution!
+
+# ---------Review Question--------------
+
+# Write a function that adds two number strings (i.e., "one" + "three" = "four").
+
+# Parameters
+# num_1: a string that represents a number (i.e., "four" is 4).
+# num_2: a string that represents a number (i.e., "four" is 4).
+
+# Output
+# Returns the string that represents the sum of num_1 + num_2
+
+# Edge cases
+
+#     If num_1 or num_2 is greater than "ten", it should instead become "zero". If the sum of num_1 + num_2 is greater than "ten", it should instead become "greater than ten" 
+
+# STDIN format
+# num_1 num_2 (for instance, one three)
+
+# Sample input / outputs
+# one three / four
+# zero five / five
+# six four / ten
+# six eleven / six
+# eleven eleven / zero
+# seven four / greater than ten
+
+# ------Attempt-----
+# feel free to use these dictionaries in your solution!
+# str_to_num = {"zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
+# num_to_str = {0: "zero", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
+
+
+# def add_str_nums(num_1, num_2):
+#     if num_1 not in str_to_num or num_2 not in str_to_num:
+#         return "zero"
+    
+#     n1 = str_to_num[num_1]
+#     n2 = str_to_num[num_2]
+    
+#     total = n1 + n2
+    
+#     if total > 10:
+#         return "greater than ten"
+#     elif total == 10:
+#         return "ten"
+#     elif total == 0:
+#         return "zero"
+#     else:
+#         return num_to_str[total]
+
+	    
+# # 	
+	
+
+# # Input handling (do not edit)
+# parts = input().split(" ")
+# print(add_str_nums(parts[0], parts[1]))
+
+# ----------------------- Expected Answer----------------------
+
+# feel free to use these dictionaries in your solution!
+# str_to_num = {"zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
+# num_to_str = {0: "zero", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
+
+# def add_str_nums(num_1, num_2):
+#     # convert the string numbers to ints so Python can perform math
+# 	if num_1 in str_to_num:
+# 	    val_1 = str_to_num[num_1]
+# 	else:
+# 	    val_1 = 0
+# 	if num_2 in str_to_num:
+# 	    val_2 = str_to_num[num_2]
+# 	else:
+# 	    val_2 = 0
+# 	# add the values, now that they're ints
+# 	sum_val = val_1 + val_2
+# 	# convert the value back to a string
+# 	if sum_val in num_to_str:
+# 	    return num_to_str[sum_val]
+# 	else:
+# 	    return "greater than ten"
+
+# # Input handling (do not edit)
+# parts = input().split(" ")
+# print(add_str_nums(parts[0], parts[1]))
+# ------------------------------------------
+# --------------STRING IN PYTHON --------
+
+
+# p = "pineapple"
+# print(p[0])
+# print(p[-1])
+# print(p[-2])
+# print(len(p))
+# for m in p:
+#     print(m, end = "")
+
+# ----------------------Review Quiestion------------------
+
+# Write a function that changes the value at given index i of a given list a_list to a given value new_value if the described conditions are met.
+
+# Modify a_list in place. No need to return anything!
+
+# Conditions
+
+#     If i is not a valid index of a_list, do nothing. If the value at a[i] is in all uppercase characters, do nothing. Otherwise, change the value at a[i] to new_value 
+
+
+# ---------------ATTEMPT-----------------------
+
+# def conditional_modify(a_list, i, new_value):
+#     # Check if i is a valid index of a_list
+#     if i < 0 or i >= len(a_list):
+#         return
+    
+#     # Check if the value at a[i] is in all uppercase characters
+#     if a_list[i].isupper():
+#         return
+    
+#     # Change the value at a[i] to new_value
+#     a_list[i] = new_value
+
+# # Input handling, do not modify!
+# a_list = input().split(" ")
+# i = int(input())
+# new_value = input()
+# conditional_modify(a_list, i, new_value)
+# print(a_list)
+
+# ------------------------------
+def test_range(n):
+    
+     test = n
+     n = int(input())
+     if 9<= test >= 3:
+         print(test) 
+         
+test_range(test)
